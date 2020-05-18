@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;700&display=swap');
+/* universal start*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font: 1em $body;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $heading;
+  color: $heading-color;
+}
+/* universal end */
