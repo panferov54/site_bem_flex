@@ -1,19 +1,150 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&display=swap');
 /* universal start*/
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   font: 1em $body;
 
 }
-h1,h2,h3,h4,h5,h6{
+
+h1, h2, h3, h4, h5, h6 {
   font-family: $heading;
   color: $heading-color;
 }
+a{
+  color: $link-color;
+  text-decoration: none;
+  &:hover{
+    color: $brand-color;
+  }
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
 /* universal end */
+
+//info-block start
+.info-block__tittle{
+  margin-bottom: 20px;
+  text-align: center;
+h1{
+
+  font-size: 2rem;
+}
+}
+.info_block__subtittle{
+@include uppercase;
+  color: $brand-color;
+  font-size: 0.7rem;
+  font-family: $body;
+  display: block;
+}
+.info-block__body{
+  p{
+    font-size: 0.7rem;
+  }
+}
+
+//info-block end
+
+
+//site start
+.site-header{
+  padding: 80px 0;
+}
+.site-logo{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.site-nav {
+  @include uppercase();
+  font-size: 0.7em;
+text-align: center;
+  li {
+    display: inline-block;
+    margin:0 20px;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+//site end
+//qoute start
+.quote{
+  margin: 0 auto 35px;
+  text-align: center;
+  &::after{
+    content: "";
+    display: block;
+    background-color: $brand-color;
+    width: 2px;
+    height: 100px;
+    margin: 35px auto 0;
+  }
+  .qoute__body{
+    font-family: $heading;
+    font-weight: 400;
+    color: $heading-color;
+  }
+  .qoute__name{
+@include uppercase();
+    font-size: 0.5rem;
+    font-style: normal;
+  }
+
+}
+//qoute end
+
+
+@media screen and(min-width: 720px) {
+  .info-block__tittle{
+    text-align: left;
+    }
+  .info-block__tittle--bigger{
+    h1,h2,h3,h4,h5,h6{
+      font-size: 1.8rem;
+    }
+  }
+  .info-block__tittle--bigger--fancy{
+    &::after{
+      content: "";
+      width: 46px;
+      height: 2px;
+      background-color: $brand-color;
+      display: inline-block;
+
+    }
+  }
+  .site-nav,.site-logo{
+    text-align: left;
+  }
+  .hero{
+    position: relative;
+    margin-bottom: 150px;
+  }
+  .hero__text{
+    position: absolute;
+    top: 50%;
+transform: translateY(-50%) ;
+    width: 45%;
+
+  }
+  .hero__img{
+    text-align: right;
+img{
+  width: 85%;
+}
+  }
+  .quote{
+    width: 50%;
+
+  }
+}
