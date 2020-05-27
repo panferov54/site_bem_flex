@@ -43,7 +43,9 @@ $breakpoint-large: 60em; // 960px
     max-width: 1200px;
   }
 }
-
+.d-flex{
+  display: flex;
+}
 .row {
   width: 100%;
 }
