@@ -156,7 +156,8 @@ margin-bottom: 100px;
     margin-left: auto;
 
     img {
-      width: 90%;
+      width: 80%;
+      margin-left: auto;
     }
   }
   .button_read-more{
@@ -185,7 +186,7 @@ margin-bottom: 100px;
 
   .info-block{
     padding-top: 150px;
-   margin-left: -100px;
+
   }
 
   .info-block__body{
@@ -194,7 +195,7 @@ margin-bottom: 100px;
       color: $heading-color;
       font-weight: 700;
 
-      width: 70%;
+
 
 
     }
@@ -204,12 +205,13 @@ margin-bottom: 100px;
     margin-left: auto;
 
     img {
-      width: 80%;
+      width: 100%;
+
     }
   }
   .button_read-more{
     margin-top: 60px;
-    margin-left: -50px;
+
     h1{
       color: $brand-color;
 

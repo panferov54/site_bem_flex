@@ -248,7 +248,8 @@ img {
     text-align: right;
     margin-left: auto; }
     .block_article-2 .hero__img img {
-      width: 90%; }
+      width: 80%;
+      margin-left: auto; }
   .block_article-2 .button_read-more {
     margin-top: 60px;
     text-transform: uppercase;
@@ -270,20 +271,17 @@ img {
   display: flex;
   margin-bottom: 100px; }
   .block_article-3 .info-block {
-    padding-top: 150px;
-    margin-left: -100px; }
+    padding-top: 150px; }
   .block_article-3 .info-block__body p {
     color: #333;
-    font-weight: 700;
-    width: 70%; }
+    font-weight: 700; }
   .block_article-3 .hero__img {
     text-align: left;
     margin-left: auto; }
     .block_article-3 .hero__img img {
-      width: 80%; }
+      width: 100%; }
   .block_article-3 .button_read-more {
     margin-top: 60px;
-    margin-left: -50px;
     text-transform: uppercase;
     letter-spacing: .4em;
     font-weight: bold;
